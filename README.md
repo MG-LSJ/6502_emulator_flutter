@@ -2,6 +2,8 @@
 
 This is a 6502 emulator written in Dart and Flutter.
 
+![image](https://github.com/MG-LSJ/6502_emulator_flutter/assets/73988826/472a5209-fe22-4eac-95d0-2112cd105c60)
+
 ## Features
 
 -   Memoery Viewer
