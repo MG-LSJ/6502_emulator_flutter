@@ -1,0 +1,32 @@
+name: emulator
+description: "A Flutter 6502 emulator"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_code_editor:
+    git:
+      url: https://github.com/akvelon/flutter-code-editor.git
+  flutter_highlight: ^0.7.0
+  flutter_riverpod: ^2.5.1
+  google_fonts: ^6.2.1
+  window_manager: ^0.3.8
+  highlight: ^0.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  riverpod_lint: ^2.3.10
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
