@@ -1,9 +1,8 @@
 import 'package:emulator/emulator/ram.dart';
 
 class Bus {
-  Bus(this.ram);
-
   final Ram ram;
+  Bus(this.ram);
 
   int read(int address) {
     if (address >= 0x0000 && address < ram.size) {

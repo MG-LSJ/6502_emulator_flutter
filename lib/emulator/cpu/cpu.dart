@@ -91,10 +91,13 @@ class Cpu extends VirtualCpu with AddressingModesMixin, InstructionsMixin {
       opCode = read(pc);
       flags.u = true;
       pc++;
-      cycles = lookup[opCode].cycles;
 
-      final int additionalCycle1 = lookup[opCode].addressMode();
-      final int additionalCycle2 = lookup[opCode].operate();
+      final Instruction instruction = lookup[opCode];
+
+      cycles = instruction.cycles;
+
+      final int additionalCycle1 = instruction.addressMode();
+      final int additionalCycle2 = instruction.operate();
 
       cycles += additionalCycle1 & additionalCycle2;
     }
